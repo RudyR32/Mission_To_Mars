@@ -7,25 +7,28 @@ import pandas as pd
 def scrape_all():
    # Initiate headless driver for deployment
    browser = Browser("chrome", executable_path="chromedriver", headless=True)
-    
-    # Set news and paragraph variables
-    news_title, news_paragraph = mars_news(browser)
+   # Set news and paragraph variables
+   news_title, news_paragraph = mars_news(browser)
 
-    # Run all scraping functions and store results in dictionary
-    data = {
-        "news_title": news_title,
-        "news_paragraph": news_paragraph,
-        "featured_image": featured_image(browser),
-        "facts": mars_facts(),
-        "last_modified": dt.datetime.now()
-    }
+   data = {
+       "news_title": news_title,
+       "news_paragraph": news_paragraph,
+       "featured_image": featured_image(browser),
+       "facts": mars_facts(),
+       "last_modified": dt.datetime.now()
+   }
 
 # Set the executable path and initialize the chrome browser in splinter
 executable_path = {'executable_path': 'chromedriver'}
 browser = Browser('chrome', **executable_path)
 
 # Make Function for Mars news scrape
-def mars_news(browser)
+def mars_news(browser):
+    # Visit the mars nasa news site
+    url = 'https://mars.nasa.gov/news/'
+    browser.visit(url)
+    # Optional delay for loading the page
+    browser.is_element_present_by_css("ul.item_list li.slide", wait_time=1)
 
 # Add try/except for error handling
     try:
@@ -37,11 +40,11 @@ def mars_news(browser)
     except AttributeError:
         return None, None
 
-    # Visit the mars nasa news site
-    url = 'https://mars.nasa.gov/news/'
-    browser.visit(url)
-    # Optional delay for loading the page
-    browser.is_element_present_by_css("ul.item_list li.slide", wait_time=1)
+    # # Visit the mars nasa news site
+    # url = 'https://mars.nasa.gov/news/'
+    # browser.visit(url)
+    # # Optional delay for loading the page
+    # browser.is_element_present_by_css("ul.item_list li.slide", wait_time=1)
 
     # Wait before searching
     browser.is_element_present_by_css("ul.item_list li.slide", wait_time=1)
