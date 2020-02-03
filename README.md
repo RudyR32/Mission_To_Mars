@@ -3,7 +3,7 @@ The the goal this week was to scrape space related data in order to impress NASA
 Note: Mars Data table was able to be produced in the Jupyter Notebook but was not able to be displayed on the website.  I talked to multiple TA's who could not help me solve the issue.  The thought was that this could be an issue affecting windows users.  I plan to revisit this and get it to display once I have had time to find the source of the issue.
 
 ## Web Scraping Page
-Below are three screen shots from the page that we compile to showcase our web scraping exercise.
+Below is a screen shot from the page that I compiled to showcase my web scraping exercise.
 ![MTM](https://github.com/RudyR32/Mission_To_Mars/blob/master/Mission_to_Mars_Fullpage.png)
 
 ## Portfolio
