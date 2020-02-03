@@ -4,7 +4,7 @@ The the goal this week was to scrape space related data in order to impress NASA
 ## Web Scraping Page
 Below are three screen shots from the page that we compile to showcase our web scraping exercise.
 
-![MTM](https://github.)com/RudyR32/Mission_To_Mars/blob/master/Mission_to_Mars_Fullpage.png)
+![MTM](https://github.com/RudyR32/Mission_To_Mars/blob/master/Mission_to_Mars_Fullpage.png)
 
 
 ## Portfolio
